@@ -1,0 +1,7 @@
+<launch>
+
+ <node name="head_detection" pkg="head_depth" type="head_detection" output="screen">
+    <remap from="depth_output_throttle" to="/pepper/camera/depth/image_raw"/>
+ </node>
+
+</launch>
